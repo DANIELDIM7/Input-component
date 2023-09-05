@@ -70,40 +70,70 @@ function Home() {
           </ContainerButtons>
           <ContainerButtons>
             <ButtonDiv>
-            <TextButtons>{`<Input disabled/>`}</TextButtons>
+              <TextButtons>{`<Input disabled/>`}</TextButtons>
               <Input placeHolder="default" label="Label" disabled></Input>
             </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
             <ButtonDiv>
-            <TextButtons>{`<Input helperText='Some interesting text'/>`}</TextButtons>
-              <Input placeHolder="default" label="Label" helperText='Some interesting text'></Input>
-              
+              <TextButtons>{`<Input helperText='Some interesting text'/>`}</TextButtons>
+              <Input
+                placeHolder="default"
+                label="Label"
+                helperText="Some interesting text"
+              ></Input>
             </ButtonDiv>
             <ButtonDiv>
-            <TextButtons>{`<Input  helperText='Some interesting text' error />`}</TextButtons>
-              <Input placeHolder="default" label="Label" error helperText='Some interesting text'></Input>
-              
+              <TextButtons>{`<Input  helperText='Some interesting text' error />`}</TextButtons>
+              <Input
+                placeHolder="default"
+                label="Label"
+                error
+                helperText="Some interesting text"
+              ></Input>
             </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <ButtonDiv></ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Input startIcon/>`}</TextButtons>
+              <Input placeHolder="default" label="Label" startIcon></Input>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Input endIcon'/>`}</TextButtons>
+              <Input placeHolder="default" label="Label" endIcon></Input>
+            </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Input value='text'/>`}</TextButtons>
+              <Input placeHolder="default" label="Label" value="text"></Input>
+            </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Input size='sm' />`}</TextButtons>
+              <Input placeHolder="default" label="Label" size="sm"></Input>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Input size='md' />`}</TextButtons>
+              <Input placeHolder="default" label="Label" size="md"></Input>
+            </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
-            <ButtonDiv></ButtonDiv>
+            <ButtonDiv style={{ width: "100%" }}>
+              <TextButtons>{`<Input fullWidth />`}</TextButtons>
+              <Input placeHolder="default" label="Label" fullWidth></Input>
+            </ButtonDiv>
           </ContainerButtons>
+          <ButtonDiv >
+            <TextButtons>{`<Input multiLine row='4 />`}</TextButtons>
+            <Input
+              placeHolder="default"
+              label="Label"
+              multiLine
+              row="4"
+            ></Input>
+          </ButtonDiv>
         </SecondContainer>
       </FirstContainer>
     </>
